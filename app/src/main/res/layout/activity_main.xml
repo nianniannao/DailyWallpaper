@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/subtitle"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <!-- 预览区：图片 + 左右切换 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/ivPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_placeholder"
+                android:contentDescription="@string/no_wallpaper_yet"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/btnPrev"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_nav_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/btnNext"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_nav_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/no_wallpaper_yet"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCopyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvUpdated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="@color/text_secondary" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSet"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="@string/set_now"
+            android:textSize="16sp"
+            app:cornerRadius="14dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/update_now"
+            android:textSize="16sp"
+            app:cornerRadius="14dp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="@string/auto_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/auto_desc"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <!-- 精确闹钟权限引导（Android 12+ 未授权时显示） -->
+        <LinearLayout
+            android:id="@+id/llExactAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_placeholder"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/exact_alarm_hint"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnExactAlarm"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exact_alarm_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

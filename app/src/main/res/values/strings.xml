@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">每日壁纸</string>
+
+    <string name="app_title">每日壁纸</string>
+    <string name="subtitle">必应每日图片 · 4K UHD · 每日凌晨 3 点自动更换</string>
+
+    <string name="update_now">获取今日壁纸</string>
+    <string name="set_now">设为壁纸</string>
+    <string name="updating">更新中…</string>
+
+    <string name="no_wallpaper_yet">还没有壁纸</string>
+    <string name="never_updated">点击下方"获取今日壁纸"，或开启自动更换</string>
+    <string name="updated_at">上次更新：%1$s</string>
+    <string name="history_pos">壁纸历史 %1$d / %2$d</string>
+
+    <string name="auto_label">每日凌晨 3 点自动更换</string>
+    <string name="auto_desc">每天 03:00 联网获取必应今日壁纸，自动设置为主屏与锁屏</string>
+
+    <string name="exact_alarm_hint">自动更换需要"闹钟与提醒"权限才能精准在 03:00 执行</string>
+    <string name="exact_alarm_btn">去开启权限</string>
+    <string name="permission_notification_rationale">需要通知权限，以便每日壁纸更新后提醒你</string>
+</resources>

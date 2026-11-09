@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 前景：白色风景图形（太阳 + 双层山 + 水面），居中于自适应图标安全区 -->
+    <!-- 太阳 -->
+    <path
+        android:fillColor="#FFF6E0"
+        android:pathData="M74,32 m-9,0 a9,9 0 1,1 18,0 a9,9 0 1,1 -18,0" />
+    <!-- 远山（半透明白） -->
+    <path
+        android:fillColor="#B8FFFFFF"
+        android:pathData="M16,72 L40,40 L52,56 L64,44 L92,72 Z" />
+    <!-- 近山（纯白） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,72 L48,50 L70,72 Z" />
+    <!-- 水面（半透明白） -->
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M16,76 Q44,69 92,76 L92,84 L16,84 Z" />
+</vector>
