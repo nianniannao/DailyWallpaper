@@ -13,7 +13,7 @@
 
 ## 界面预览
 
-<img src="docs/screenshot-main.png" width="360" alt="每日壁纸 APP 主界面：当前壁纸与标题版权、壁纸历史翻页、设为壁纸与获取今日壁纸按钮、凌晨 3 点自动更换开关">
+<img src="docs/screenshots/app-main.jpg" width="360" alt="每日壁纸 APP 主界面：当前壁纸与标题版权、壁纸历史翻页、设为壁纸与获取今日壁纸按钮、凌晨 3 点自动更换开关">
 
 ## 功能特性
 
