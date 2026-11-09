@@ -4,6 +4,13 @@
 
 > 当前版本：**v2.0.1**（versionCode 6）
 
+## 下载安装
+
+- **APK 安装包**：[DailyWallpaper-2.0.1.apk](apk/DailyWallpaper-2.0.1.apk)（5.8 MB）
+- **Releases 页面**：<https://github.com/nianniannao/DailyWallpaper/releases/latest>
+
+安装步骤：下载 APK → 手机点击安装（允许未知来源）→ 首次打开时允许闹钟与提醒权限，以保证凌晨 3 点准时自动更换壁纸。
+
 ## 功能特性
 
 - **必应每日 4K 壁纸（唯一来源）**：每日自动获取必应首页精选图（UHD 3840×2160 真 4K）
