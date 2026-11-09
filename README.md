@@ -13,7 +13,16 @@
 
 ## 界面预览
 
-<img src="docs/screenshots/app-main.jpg" width="360" alt="每日壁纸 APP 主界面：当前壁纸与标题版权、壁纸历史翻页、设为壁纸与获取今日壁纸按钮、凌晨 3 点自动更换开关">
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="docs/screenshots/app-main.jpg" width="300" alt="今日壁纸"><br><sub>今日壁纸：必应每日 4K 图，含标题与版权信息</sub></td>
+    <td align="center" width="50%"><img src="docs/screenshots/app-history-8.jpg" width="300" alt="壁纸历史第 8 张"><br><sub>历史第 8 张｜泛舟如画秋林（安徽宣城）</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/app-history-6.jpg" width="300" alt="壁纸历史第 6 张"><br><sub>历史第 6 张｜向山巅再迈一步（英格兰湖区）</sub></td>
+    <td align="center"><img src="docs/screenshots/app-history-4.jpg" width="300" alt="壁纸历史第 4 张"><br><sub>历史第 4 张｜穿越毛伊岛的绿色隧道（夏威夷）</sub></td>
+  </tr>
+</table>
 
 ## 功能特性
 
