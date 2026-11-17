@@ -111,3 +111,7 @@ gradle assembleRelease
 - 部分厂商（MIUI / ColorOS 等）有壁纸管理策略，设置后可在系统壁纸设置中确认
 - 安卓 12+ 未授予"闹钟与提醒"权限时，将降级为每天 3 点前后执行（仍会自动更换，时间可能偏移）
 - 壁纸历史保存在应用私有目录，卸载应用会一并清除
+
+## 开源许可
+
+本项目以 GNU General Public License v3.0 or later 发布，全文见 [LICENSE](LICENSE)。

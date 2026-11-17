@@ -1,0 +1,11 @@
+Daily Wallpaper is a minimal wallpaper app: it fetches Bing's daily image in 4K UHD (3840x2160) and sets it as your home and lock screen wallpaper every day at 3:00 AM.
+
+Features:
+- Bing daily 4K image as the single source, no third-party galleries
+- Exact alarm at 3:00 AM, works while the screen is off or the device is dozing, restored after reboot
+- Keeps up to 30 wallpapers in a local history, swipe to browse; when the local history runs out it fetches Bing images from up to 5 previous days
+- Sets home and lock screen wallpapers in one step
+- Minimal permissions: internet, set wallpaper, notifications (optional), exact alarm (optional), boot completed
+- Fully local, no account, no ads, no analytics, collects no personal data
+
+Note: images come from Bing's public daily image endpoint and remain copyright of their respective owners/Bing; the app only downloads them locally and applies them as wallpaper.

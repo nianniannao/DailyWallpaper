@@ -15,23 +15,10 @@ android {
         versionName = "2.0.1"
     }
 
-    signingConfigs {
-        create("release") {
-            storeFile = rootProject.file("dailywallpaper-release.keystore")
-            storePassword = "dailywallpaper2026"
-            keyAlias = "dailywallpaper"
-            keyPassword = "dailywallpaper2026"
-        }
-    }
-
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("release")
-        }
-        debug {
-            signingConfig = signingConfigs.getByName("release")
         }
     }
 
