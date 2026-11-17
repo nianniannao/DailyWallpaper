@@ -1,0 +1,40 @@
+Categories:
+  - Graphics
+License: GPL-3.0-or-later
+AuthorName: nianniannao
+SourceCode: https://github.com/nianniannao/DailyWallpaper
+IssueTracker: https://github.com/nianniannao/DailyWallpaper/issues
+AutoName: 每日壁纸
+
+Summary: 必应每日 4K 壁纸，凌晨自动更换
+Description: |
+  极简每日壁纸应用：从必应每日精选图取 4K UHD（3840×2160）壁纸，每天凌晨
+  3:00 自动设为主屏与锁屏壁纸。
+
+  使用 AlarmManager 精确闹钟（setExactAndAllowWhileIdle），熄屏与 Doze 下仍能
+  准点触发，开机后自动恢复调度；无精确闹钟权限时自动降级并引导授权。
+
+  壁纸历史最多保存 30 张，预览图左右切换浏览；本地历史翻到底时自动联网补载
+  更早的必应壁纸（最多 5 天前）。主屏与锁屏可一次性同步更换。
+
+  极简权限：联网、设置壁纸、通知（可选）、精确闹钟（可选）、开机恢复。纯本地
+  运行，无账号、无广告、无统计，不收集任何个人信息。
+
+RepoType: git
+Repo: https://github.com/nianniannao/DailyWallpaper.git
+
+Builds:
+  - versionName: '2.0.1'
+    versionCode: 6
+    commit: 7ba65c55c62026fc1f290dd80788747e5804e60d
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+AntiFeatures:
+  - NonFreeNet
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '2.0.1'
+CurrentVersionCode: 6
